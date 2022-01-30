@@ -53,4 +53,10 @@ brew install --cask brave-browser;
 brew install --cask google-chrome;
 
 # install firefox
-brew install --cask firefox
+brew install --cask firefox;
+
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
+
+# install node
+nvm install --lts;
