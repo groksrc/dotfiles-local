@@ -1,4 +1,4 @@
-# sh -c "$(curl -fsSL https://raw.github.com/groksrc/dotfiles-local/master/README.md)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/groksrc/dotfiles-local/main/README.md)"
 
 # creates a new ssh key pair
 ssh-keygen -t rsa -f "$HOME/.ssh/id_rsa" -P "";
