@@ -1,4 +1,12 @@
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/groksrc/dotfiles-local/main/README.md)"
+# install 1Password
+brew install --cask 1password
+
+read -p "1Password is installed. Ready to continue?" -n 1 -r
+echo    # (optional) move to a new line
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 # handle exits from shell or function but don't exit interactive shell
+fi
 
 # creates a new ssh key pair
 ssh-keygen -t rsa -f "$HOME/.ssh/id_rsa" -P "";
@@ -10,11 +18,7 @@ ssh-keygen -p -f "$HOME/.ssh/id_rsa" -P "";
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 
 # makes Homebrew available in this terminal
-# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/drew/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)";
-
-# install vscode
-brew install --cask visual-studio-code;
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
@@ -34,4 +38,17 @@ git clone git://github.com/groksrc/dotfiles-local.git
 # install iterm2 integration
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash;
 
+# install vscode
+brew install --cask visual-studio-code;
 
+# install slack
+brew install --cask slack;
+
+# install brave
+brew install --cask brave-browser;
+
+# install chrome
+brew install --cask google-chrome;
+
+# install firefox
+brew install --cask firefox
