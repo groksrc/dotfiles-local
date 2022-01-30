@@ -30,7 +30,7 @@ git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles;
 brew install rcm;
 
 # rcup the default dotfiles
-env RCRC=$HOME/dotfiles/rcrc rcup
+env RCRC=$HOME/dotfiles/rcrc rcup -x boot.sh
 
 # clone local dotfiles
 git clone git://github.com/groksrc/dotfiles-local.git
