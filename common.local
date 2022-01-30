@@ -1,5 +1,0 @@
-export HISTSIZE=1000000			 # big history
-export HISTFILESIZE=2000000		 # big history
-export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
