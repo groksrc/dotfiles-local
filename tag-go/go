@@ -1,4 +1,4 @@
-mkdir -p ./go
+mkdir -p $HOME/go
 export PATH="/usr/local/go/bin:$PATH"
 export GOROOT="/usr/local/go"
-export GOPATH="./go"
+export GOPATH="$HOME/go"
