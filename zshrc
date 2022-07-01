@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
@@ -41,3 +43,6 @@ _load_settings "$HOME/.zsh/configs"
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
